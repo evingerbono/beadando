@@ -1,0 +1,130 @@
+main, header,nav, article footer{
+    border:1px solid  rgb(14, 13, 13);
+    padding: 0px;
+}
+body{
+    background-image: url("./kepek/hatter.jpg");
+    font-family: Arial, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    grid-area: h;
+    color: white;
+    text-align: center;
+}
+img{
+    width: 200px;
+    float: left;
+    padding: 3px;
+    margin-right: 20px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: left;
+    font-size: 20px;
+}
+p{
+    font-size: 17px;
+}
+article{
+    grid-area: a;
+    margin: auto;
+    color: white;
+    padding: 40px;
+}
+footer{
+    background-color: rgb(2, 2, 2);
+    grid-area: f;
+    text-align: center;
+    align-items: center;
+    color:whitesmoke;
+}
+nav{
+    grid-area: n;
+}
+nav ul{
+    list-style-type: none;
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ nav li a{
+     font-size: 22px;
+    text-decoration: none;
+    width:100%;
+    display: block;
+    color: rgb(216, 29, 29);
+}
+nav li a:hover{
+    color: white;
+}
+table {
+    width: 90%;
+    margin-left: 30px;
+    border-collapse: collapse;
+    text-align: center;
+}
+tr {
+    border-bottom: 3px solid #019bfc;
+    padding: 2px;
+    margin: 3px;
+    text-align: center;
+}
+th{
+    font-size: 20px;
+    margin: 3px;
+}
+td{
+    font-size: 18px;
+    padding: 2px;
+    margin: 3px;
+}
+tr:nth-child(odd) {
+    background-color: #1d2122;
+}
+
+div, img{
+    width: 450px;
+    height: 250px;
+}
+.python{
+    padding: 5px;
+    float: left;
+}
+.webprog{
+    padding: 5px;
+    float: right;
+}
+
+main{
+    margin: auto;
+    background-color: rgb(14, 13, 13);
+    max-width: 1000px;
+        display: grid;
+        grid-template-columns:  auto auto auto auto;
+        grid-template-areas:    "h h h h"
+                                "n n n n"
+                                "a a a a"
+                                "f f f f";
+}
+@media screen and (max-width:600px){
+    main{
+        display: grid;
+        grid-template-columns: 250px auto auto auto;
+        grid-template-areas:    "h"
+                                "n"
+                                "a"
+                                "f";
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+
+
